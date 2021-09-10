@@ -9,7 +9,6 @@ $reservas = new Reservas($pdo);
 
 ?>
 <h1 class="title">Reservas</h1>
-
 <a href="reservar.php" class="btn-add">Adicionar Reserva</a>
 <br></br>
 
@@ -60,7 +59,8 @@ foreach($lista as $item){
     $data2 = date('d/m/Y', strtotime($item['data_fim']));
     echo $item['pessoa'].' reservou o carro '.$item['id_carro'].' entre '.$data1.' e '.$data2.'<br/>';
 
-}*/
+}
+*/
 ?>
 <hr/>
 
